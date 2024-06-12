@@ -1,8 +1,16 @@
 # PinAPP - Challenge
 
-Esta es una aplicación que permite crear un cliente, obtener su KPI y listar todos los clientes agregando su fecha probable de muerte.
+Esta es una aplicación desarrollada con Java 17, Spring Boot 3 y MySQL, deployada en AWS con EC2 y RDS. <br/>
+Permite crear un cliente, obtener su KPI y listar todos los clientes agregando su fecha probable de muerte.
+
+## Swagger
+
+Para ingresar a swagger tiene que acceder al siguiente link:
+`http://18.119.113.226/swagger-ui/index.html`
 
 ## Endpoints
+
+Puede utilizar Postman para ejecutar los siguientes endpoints
 
 ### Crear Cliente
 
