@@ -6,7 +6,7 @@ Esta es una aplicación que permite crear un cliente, obtener su KPI y listar to
 
 ### Crear Cliente
 
-**Endpoint:** `/api/clientes`
+**Endpoint:** `http://18.119.113.226/crearcliente`
 
 **Método:** `POST`
 
@@ -26,14 +26,14 @@ Esta es una aplicación que permite crear un cliente, obtener su KPI y listar to
 {
   "nombre": "Nombre del Cliente",
   "apellido": "Apellido del Cliente",
-  "edad": 30,
+  "edad": 34,
   "fecha_nacimiento": "1990-01-01"
 }
 ```
 
 ### Obtener KPI de Clientes
 
-**Endpoint:** `/api/clientes`
+**Endpoint:** `http://18.119.113.226/kpideclientes`
 
 **Método:** `GET`
 
@@ -51,7 +51,7 @@ Esta es una aplicación que permite crear un cliente, obtener su KPI y listar to
 
 ### Listar Clientes con su fecha probable de muerte
 
-**Endpoint:** `/api/clientes`
+**Endpoint:** `http://18.119.113.226/listclientes`
 
 **Método:** `GET`
 
@@ -61,8 +61,15 @@ Esta es una aplicación que permite crear un cliente, obtener su KPI y listar to
 
 **Response:**
 ```json
-{
-  "edad_promedio": 10,
-  "desviacion_estadar": 0.99
-}
+[
+    {
+        "cliente": {
+            "nombre": "Nombre del Cliente",
+            "apellido": "Apellido del Cliente",
+            "edad": 34,
+            "fecha_nacimiento": "1990-01-01"
+        },
+        "fecha_probable_de_muerte": "2070-01-01"
+    }
+]
 ```
